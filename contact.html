@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+		<link rel="stylesheet" href="style/style.css" />
+		<link rel="stylesheet" href="style/contact.css" />
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<h1>Portf<span class="purpel">olio</span></h1>
+			</div>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="index.html#about">About</a>
+				<a href="#">Contact Me</a>
+			</nav>
+
+			<div class="control">
+				<i class="icon"><img class="modeIcon" src="./assets/img/sun-solid.svg" /></i>
+			</div>
+		</header>
+		<div class="contactForm container">
+			<form action="">
+				<label for="name">
+					Name
+					<br />
+					<input type="text" name="name" id="name" placeholder="John Doe..." required />
+				</label>
+				<br />
+				<label for="email">
+					Email
+					<br />
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Example@gmail.comm..."
+						required
+					/>
+				</label>
+				<br />
+				<label for="massage">
+					Massage
+					<br />
+					<textarea
+						name="massage"
+						id="massage"
+						cols="43"
+						rows="10"
+						placeholder="Enter You Massage..."
+						required
+					></textarea>
+				</label>
+				<br />
+				<button type="submit">Send</button>
+			</form>
+		</div>
+
+		<script src="./assets/bootstrap/bootstrap.min.js"></script>
+		<script src="./js/app2.js"></script>
+	</body>
+</html>

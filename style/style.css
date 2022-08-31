@@ -1,0 +1,297 @@
+@import url('/assets/DMSans-Regular.ttf');
+@import url('/assets/DMSans-Medium.ttf');
+@import url('/assets/DMSans-Bold.ttf');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #e5e5e5;
+	font-family: 'DM Sans', sans-serif;
+	/* font-size: 1vw; */
+}
+
+body.dark-mode {
+	background-color: #333333;
+}
+
+/* .control {
+	padding: 10px;
+	background-color: #c5c1c1;
+	border-radius: 50px;
+	height: 60px;
+	width: 60px;
+} */
+
+.icon img {
+	margin: 15px;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+
+.ellipse {
+	border-radius: 50%;
+	position: absolute;
+	z-index: -1;
+}
+
+/* .ellipse.dark-mode {
+	display: none;
+} */
+
+.ellipse1 {
+	right: 30%;
+	top: 20%;
+	height: 30%;
+	width: 15%;
+	background: linear-gradient(291.11deg, #c5c1c1 20.42%, rgba(217, 217, 217, 0) 79.55%);
+}
+.ellipse1.dark-mode {
+	background: linear-gradient(291.11deg, rgb(67, 67, 67) 20.42%, rgba(217, 217, 217, 0) 79.55%);
+}
+
+.ellipse2 {
+	left: 5%;
+	top: 0%;
+	height: 20%;
+	width: 10%;
+	background: linear-gradient(291.11deg, #c5c1c1 15.42%, rgba(217, 217, 217, 0) 79.55%);
+}
+
+.ellipse2.dark-mode {
+	background: linear-gradient(291.11deg, rgb(67, 67, 67) 15.42%, rgba(217, 217, 217, 0) 79.55%);
+}
+
+.ellipse3 {
+	right: 5%;
+	top: 80%;
+	height: 40%;
+	width: 20%;
+	background: linear-gradient(291.11deg, #c5c1c1 20.42%, rgba(217, 217, 217, 0) 79.55%);
+}
+
+.ellipse3.dark-mode {
+	background: linear-gradient(291.11deg, rgb(67, 67, 67) 20.42%, rgba(217, 217, 217, 0) 79.55%);
+}
+
+.ellipse4 {
+	left: 20%;
+	top: 60%;
+	height: 30%;
+	width: 15%;
+	background: linear-gradient(291.11deg, #c5c1c1 7.42%, rgba(217, 217, 217, 0) 79.55%);
+}
+
+.ellipse4.dark-mode {
+	background: linear-gradient(291.11deg, rgb(67, 67, 67) 7.42%, rgba(217, 217, 217, 0) 79.55%);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	color: #000;
+	font-size: 1.25em;
+	cursor: pointer;
+}
+
+.logo.dark-mode {
+	color: #fff;
+}
+
+.purpel {
+	color: #d58fff;
+}
+
+.purpel.dark-mode {
+	color: #a26bc2;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	font-size: 2em;
+	align-items: center;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	padding: 0px 0.6em;
+	margin-top: 5px;
+}
+
+a.dark-mode {
+	color: #fff;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: underline #d58fff 4px;
+}
+
+a.dark-mode:hover {
+	text-decoration: underline #a26bc2 4px;
+	color: #fff;
+}
+
+section.homeMain {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+	margin-top: 18%;
+	margin-bottom: 25%;
+}
+
+.homeMain h1 {
+	font-weight: 400;
+	font-weight: 500;
+}
+
+.name {
+	font-size: 4em;
+	text-decoration: underline 5px #d58fff;
+	transform: translateX(-100px);
+}
+
+.name.dark-mode {
+	text-decoration: underline 5px #a26bc2;
+	color: #fff;
+}
+
+.role {
+	font-size: 3em;
+	transform: translateX(100px);
+}
+
+.role.dark-mode {
+	color: #fff;
+}
+
+.container {
+	width: 95%;
+	margin: auto;
+}
+
+section.about {
+	background-color: #d2d1d1;
+	border-radius: 50px 50px 0 0;
+	/* TODO: Fix the height */
+	height: 500px;
+}
+
+section.about.dark-mode {
+	background-color: #323030;
+}
+
+section.about h1 {
+	text-align: center;
+	font-size: 3rem;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+section.about.dark-mode h1 {
+	color: #fff;
+}
+
+.flex {
+	display: flex;
+	flex-flow: 1 1;
+}
+
+.flex a div {
+	border-radius: 50%;
+	overflow: hidden;
+	/* display: inline; */
+	width: fit-content;
+	/* height: fit-content; */
+	cursor: pointer;
+	margin: 10px;
+}
+
+.skills {
+	width: 50%;
+}
+.skills img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	width: 60px;
+	padding: 8px;
+	margin: 8px;
+}
+
+.skills h2 {
+	font-size: 2em;
+}
+
+.html {
+	background-color: #e3967f;
+}
+
+.css {
+	background-color: #70aacb;
+}
+
+.js {
+	background-color: #fbe87b;
+}
+.git {
+	background-color: #ec7765;
+}
+.git img {
+	padding-top: 20px;
+}
+.bootstrap {
+	background-color: #ccabfc;
+}
+
+.html.dark-mode {
+	background-color: #986454;
+}
+
+.css.dark-mode {
+	background-color: #57829b;
+}
+
+.js.dark-mode {
+	background-color: #a3964e;
+}
+.git.dark-mode {
+	background-color: #9c5045;
+}
+
+.bootstrap.dark-mode {
+	background-color: #9578c4;
+}
+
+.whoAmI {
+	font-size: 1.5rem;
+	/* height: 100px; */
+	width: 50%;
+	margin-right: 50px;
+}
+
+.whoAmI h2 {
+	font-size: 2rem;
+	/* padding-top: 15px; */
+}
+
+.card.dark-mode {
+	background-color: #4b4a4a;
+	color: #fff;
+}

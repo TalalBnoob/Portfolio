@@ -1,0 +1,89 @@
+.contactForm {
+	margin-top: 100px;
+	/* border: 2px solid #d58fff; */
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	width: 100%;
+	margin: auto;
+	padding-left: 250px;
+}
+
+input,
+textarea,
+button {
+	margin: 12px auto;
+}
+
+input.dark-mode,
+textarea.dark-mode,
+button.dark-mode {
+	color: #fff;
+	background-color: rgb(108, 108, 108);
+}
+
+input,
+textarea {
+	font-size: 1.2rem;
+	border-radius: 10px;
+	border: none;
+	padding: 20px;
+}
+
+input:focus,
+textarea:focus {
+	outline: #d58fff solid 4px;
+}
+
+input.dark-mode:focus,
+textarea.dark-mode:focus {
+	outline: #a26bc2 solid 4px;
+}
+
+input {
+	width: 84%;
+	height: 60px;
+}
+
+label {
+	font-size: 1.1rem;
+	width: 100%;
+}
+
+label.dark-mode {
+	color: #fff;
+}
+
+button {
+	border: none;
+	border-radius: 30px;
+	background-color: white;
+	padding: 10px;
+	width: 80px;
+	height: 50px;
+	font-size: 1.1rem;
+	margin-top: 20px;
+}
+
+button:hover {
+	outline: 4px solid #d58fff;
+}
+
+button:active {
+	outline: none;
+	background-color: #d58fff;
+	color: white;
+}
+
+button.dark-mode:hover {
+	outline: 4px solid #a26bc2;
+}
+
+button.dark-mode:active {
+	background-color: #a26bc2;
+	color: white;
+}
