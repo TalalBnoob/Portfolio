@@ -99,7 +99,6 @@ header {
 .logo {
 	color: #000;
 	font-size: 1.25em;
-	cursor: pointer;
 }
 
 .logo.dark-mode {
