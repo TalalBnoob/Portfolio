@@ -3,9 +3,9 @@ const btn = document.querySelector('i');
 btn.addEventListener('click', () => {
 	document.querySelector('body').classList.toggle('dark-mode');
 	if (document.querySelector('body').classList.contains('dark-mode')) {
-		document.querySelector('.modeIcon').setAttribute('src', './assets/img/moon-solid.svg');
+		document.querySelector('.modeIcon').setAttribute('src', './img/moon-solid.svg');
 	} else {
-		document.querySelector('.modeIcon').setAttribute('src', './assets/img/sun-solid.svg');
+		document.querySelector('.modeIcon').setAttribute('src', './img/sun-solid.svg');
 	}
 	document.querySelector('.ellipse1').classList.toggle('dark-mode');
 	document.querySelector('.ellipse2').classList.toggle('dark-mode');
