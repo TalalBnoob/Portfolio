@@ -13,6 +13,7 @@ body {
 	background-color: #e5e5e5;
 	font-family: 'DM Sans', sans-serif;
 	/* font-size: 1vw; */
+    min-width: 1280px ;
 }
 
 body.dark-mode {
@@ -47,8 +48,8 @@ body.dark-mode {
 .ellipse1 {
 	right: 30%;
 	top: 20%;
-	height: 30%;
-	width: 15%;
+	height: 200px;
+	width: 200px;
 	background: linear-gradient(291.11deg, #c5c1c1 20.42%, rgba(217, 217, 217, 0) 79.55%);
 }
 .ellipse1.dark-mode {
@@ -58,8 +59,8 @@ body.dark-mode {
 .ellipse2 {
 	left: 5%;
 	top: 0%;
-	height: 20%;
-	width: 10%;
+	height: 200px;
+	width: 200px;
 	background: linear-gradient(291.11deg, #c5c1c1 15.42%, rgba(217, 217, 217, 0) 79.55%);
 }
 
@@ -70,8 +71,8 @@ body.dark-mode {
 .ellipse3 {
 	right: 5%;
 	top: 80%;
-	height: 40%;
-	width: 20%;
+	height: 250px;
+	width: 250px;
 	background: linear-gradient(291.11deg, #c5c1c1 20.42%, rgba(217, 217, 217, 0) 79.55%);
 }
 
@@ -82,8 +83,8 @@ body.dark-mode {
 .ellipse4 {
 	left: 20%;
 	top: 60%;
-	height: 30%;
-	width: 15%;
+	height: 300px;
+	width: 300px;
 	background: linear-gradient(291.11deg, #c5c1c1 7.42%, rgba(217, 217, 217, 0) 79.55%);
 }
 
@@ -97,6 +98,7 @@ header {
 }
 
 .logo {
+    margin: 10px;
 	color: #000;
 	font-size: 1.25em;
 }
@@ -188,7 +190,7 @@ section.about {
 	background-color: #d2d1d1;
 	border-radius: 50px 50px 0 0;
 	/* TODO: Fix the height */
-	height: 500px;
+	/*height: 500px;*/
 }
 
 section.about.dark-mode {
@@ -293,4 +295,53 @@ section.about.dark-mode h1 {
 .card.dark-mode {
 	background-color: #4b4a4a;
 	color: #fff;
+}
+
+.card {
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1280px){
+    body{
+        min-width: 860px;
+    }
+    
+    .info.flex{
+        flex-direction: column;
+    }
+    
+    .whoAmI {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skills {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skills .card-body{
+        flex-wrap: wrap;
+    }
+
+    .skills img {
+	    height: 60px;
+	    width: 60px;
+	    padding: 6px;
+    }
+
+
+    .card {
+        margin-bottom: 60px;
+    }
+
+    .git img{
+        padding-top: 18px;
+    }
+
+    .ellipse {
+        display: none;
+    }
 }

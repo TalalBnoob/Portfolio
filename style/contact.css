@@ -10,7 +10,7 @@
 form {
 	width: 100%;
 	margin: auto;
-	padding-left: 250px;
+	padding-left: 20%;
 }
 
 input,
@@ -42,6 +42,14 @@ textarea:focus {
 input.dark-mode:focus,
 textarea.dark-mode:focus {
 	outline: #a26bc2 solid 4px;
+}
+
+input.dark-mode::placeholder{
+    color: white;
+}
+
+textarea.dark-mode::placeholder{
+    color: white;
 }
 
 input {
@@ -86,4 +94,17 @@ button.dark-mode:hover {
 button.dark-mode:active {
 	background-color: #a26bc2;
 	color: white;
+}
+
+
+@media screen and (max-width: 1280px){
+    input {
+	width: 100%;
+	height: 60px;
+}
+
+textarea{
+    width: 100%;
+}
+
 }
