@@ -7,10 +7,6 @@ btn.addEventListener('click', () => {
 	} else {
 		document.querySelector('.modeIcon').setAttribute('src', './assets/img/sun-solid.svg');
 	}
-	// let ellipses = document.querySelectorAll('.ellipse');
-	// ellipses.forEach(ellipse => {
-	// 	ellipse.classList.toggle('dark-mode');
-	// });
 	document.querySelector('.ellipse1').classList.toggle('dark-mode');
 	document.querySelector('.ellipse2').classList.toggle('dark-mode');
 	document.querySelector('.ellipse3').classList.toggle('dark-mode');
@@ -35,12 +31,3 @@ btn.addEventListener('click', () => {
 		card.classList.toggle('dark-mode');
 	});
 });
-
-/*
-document.querySelector('textarea').classList.toggle('dark-mode');
-	document.querySelector('button').classList.toggle('dark-mode');
-	let inputs = document.querySelectorAll('input');
-	inputs.forEach(inputs => {
-		inputs.classList.toggle('dark-mode');
-	});
-*/
